@@ -230,6 +230,7 @@ section {
     overflow: hidden;
     z-index: 1;
     border: 2px solid var(--hover-color);
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -396,7 +397,12 @@ section {
 .about-content p em {
     text-transform: uppercase;
 }
-
+.less {
+    display: none;
+}
+.more{
+    display: block;
+}
 .info-about1,
 .info-about2,
 .info-about3 {

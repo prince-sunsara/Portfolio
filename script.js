@@ -116,3 +116,18 @@ scrollTop.forEach((el) => observer.observe(el));
 
 const scrollBottom = document.querySelectorAll(".scroll-bottom");
 scrollBottom.forEach((el) => observer.observe(el));
+
+
+// paragraph in about
+
+// let para_length = p.textContent.length;
+let button = document.querySelector(".about-content a");
+// console.log(para_length);
+function showMore(){
+    // document.querySelectorAll(".about-content .more").style.display = "block";
+    // document.querySelector(".more").style.display = "block";
+    document.querySelector(".less").classList.toggle("more");
+
+}
+// button.addEventListener("click", () => {
+// })
