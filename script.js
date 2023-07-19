@@ -120,14 +120,15 @@ scrollBottom.forEach((el) => observer.observe(el));
 
 // paragraph in about
 
-// let para_length = p.textContent.length;
+const p = document.querySelector(".about-content p");
 let button = document.querySelector(".about-content a");
-// console.log(para_length);
 function showMore(){
-    // document.querySelectorAll(".about-content .more").style.display = "block";
-    // document.querySelector(".more").style.display = "block";
     document.querySelector(".less").classList.toggle("more");
-
+    
+    if(document.querySelector(".less").classList.contains("more")){
+        button.innerHTML= "Read Less!";
+    } else {
+        // p.classList.remove("more");
+        button.innerHTML = "Read More!";
+    }
 }
-// button.addEventListener("click", () => {
-// })
