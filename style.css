@@ -393,6 +393,9 @@ section {
     font-weight: 300;
     margin-bottom: 1.5rem;
 }
+.about-content p em {
+    text-transform: uppercase;
+}
 
 .info-about1,
 .info-about2,
