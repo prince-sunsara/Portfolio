@@ -598,7 +598,7 @@ section {
 }
 
 .box {
-    margin: 10px 0;
+    margin: 20px 0;
     flex: 1 1 15rem;
     position: relative;
 }
