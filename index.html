@@ -405,12 +405,24 @@
             <span>Ask me question</span>
             <h2>Contact Me!</h2>
         </div>
-        <form action="mailto:princesunasara@gmail.com" class="scroll-bottom">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <input type="text" id="address" placeholder="Your Address" required>
-            <input type="number" id="number" placeholder="Phone Number" required>
-            <textarea cols="30" rows="10" placeholder="Your Message" id="message" required></textarea>
+
+        <!-- form for submiiting all datas to email -->
+        <form 
+            name="contact" 
+            class="scroll-bottom" 
+            method="POST" 
+            data-netlify="true" 
+            netlify-honeypot="bot-field" 
+            onsubmit="submit"
+            >
+            <input type="hidden" name="subject" value="New Entry at portfolio"/>
+            <input type="hidden" name="bot-field"/>
+
+            <input type="text" id="name" placeholder="Your Name" name="name" required>
+            <input type="email" id="email" placeholder="Your Email" name="email" required>
+            <input type="text" id="address" placeholder="Your Address" name="address" required>
+            <input type="number" id="number" placeholder="Phone Number" name="number" required>
+            <textarea cols="30" rows="10" placeholder="Your Message" id="message" name="msg" required></textarea>
             <div class="btn-box formBtn">
                 <button type="submit" class="btn">Send Message</button>
             </div>
@@ -422,6 +434,7 @@
         <p class="scroll-scale">Copyright &copy; 2023 by Prince Sunsara || All Right Reserved</p>
         <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
     </footer>
+
 
     <!-- external js link  -->
     <script src="script.js"></script>
